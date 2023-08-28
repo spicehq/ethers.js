@@ -4,6 +4,83 @@ Changelog
 This change log is managed by `admin/cmds/update-versions` but may be manually updated.
 
 
+ethers/v5.7.2 (2022-10-19 04:19)
+--------------------------------
+
+  - Updated tests to use goerli instead of ropsten. ([1392803](https://github.com/ethers-io/ethers.js/commit/139280390c32b80c533e6a74c84595e6bea706b9), [706d3ca](https://github.com/ethers-io/ethers.js/commit/706d3ca27c233385944877eb64c099c74109b6c2))
+  - Added new error strings Pocket returns. ([9f990c5](https://github.com/ethers-io/ethers.js/commit/9f990c57f0486728902d4b8e049536f2bb3487ee))
+  - Fixed Alchemy goerli URL. ([#3320](https://github.com/ethers-io/ethers.js/issues/3320), [#3323](https://github.com/ethers-io/ethers.js/issues/3323), [#3340](https://github.com/ethers-io/ethers.js/issues/3340), [#3358](https://github.com/ethers-io/ethers.js/issues/3358), [#3423](https://github.com/ethers-io/ethers.js/issues/3423); [74e3d98](https://github.com/ethers-io/ethers.js/commit/74e3d98d1df2bd97be258202a63517d4aa1ba8fd))
+  - Update testnets for third-party providers. ([#3320](https://github.com/ethers-io/ethers.js/issues/3320), [#3323](https://github.com/ethers-io/ethers.js/issues/3323), [#3340](https://github.com/ethers-io/ethers.js/issues/3340), [#3358](https://github.com/ethers-io/ethers.js/issues/3358), [#3423](https://github.com/ethers-io/ethers.js/issues/3423); [2a3a2e1](https://github.com/ethers-io/ethers.js/commit/2a3a2e1feda7b18c8e234c84e4de32d4246f18ed))
+
+ethers/v5.7.1 (2022-09-13 21:28)
+--------------------------------
+
+  - Fixed message signing errors that clobbered critical Error properties. ([#3356](https://github.com/ethers-io/ethers.js/issues/3356); [b14cb0f](https://github.com/ethers-io/ethers.js/commit/b14cb0fa2c31c09bfc4c668e5b9dbbc52e9b5dce))
+  - Add support for all data URL formats. ([#3341](https://github.com/ethers-io/ethers.js/issues/3341); [4c86dc9](https://github.com/ethers-io/ethers.js/commit/4c86dc9ed41fcf889daaaca41686a218a0c68e90))
+  - Added Sepolia network. ([#3325](https://github.com/ethers-io/ethers.js/issues/3325); [d083522](https://github.com/ethers-io/ethers.js/commit/d083522374b8e48e02688d2f8e29cd86f99e5fc4))
+
+ethers/v5.7.0 (2022-08-18 16:17)
+--------------------------------
+
+  - Update PocketProvider to newer URL format. ([#2980](https://github.com/ethers-io/ethers.js/issues/2980); [10d07ca](https://github.com/ethers-io/ethers.js/commit/10d07ca6ec0622fb5a58b7e61b089166ebe8ea15))
+  - Add new ENS normalization specification for wider UTF-8 support. ([#42](https://github.com/ethers-io/ethers.js/issues/42), [#2376](https://github.com/ethers-io/ethers.js/issues/2376), [#2754](https://github.com/ethers-io/ethers.js/issues/2754); [14bf407](https://github.com/ethers-io/ethers.js/commit/14bf407bd948bb1bc91161032c93a67d81fb5a02), [fce9aaa](https://github.com/ethers-io/ethers.js/commit/fce9aaa7345a001a4a56bce66298ee23948d120c), [f274104](https://github.com/ethers-io/ethers.js/commit/f274104865794f7f24db4244d591c39ad16f6688))
+  - Added ACTION_REJECTED error for UI-based Signers. ([d9897e0](https://github.com/ethers-io/ethers.js/commit/d9897e0fdb5f9ca34822929c95a478634cc2a460))
+  - Include current baseFee in feeData for easier custom fee calculation. ([8314236](https://github.com/ethers-io/ethers.js/commit/8314236143a300ae81c1dcc27a7a36640df22061))
+  - Add restrictions for new UTF-8 specification ENS names. ([#42](https://github.com/ethers-io/ethers.js/issues/42), [#2376](https://github.com/ethers-io/ethers.js/issues/2376), [#2754](https://github.com/ethers-io/ethers.js/issues/2754); [e52fbfb](https://github.com/ethers-io/ethers.js/commit/e52fbfbe70014e8033d3beed9c0dff2809eeef7f))
+  - Expand the definition of a WebSocketLike. ([#2843](https://github.com/ethers-io/ethers.js/issues/2843); [00114d7](https://github.com/ethers-io/ethers.js/commit/00114d7b2f6e65a1cc974ea5b03abad568db4827))
+  - Expanded type for queryFitler to allow string. ([#2882](https://github.com/ethers-io/ethers.js/issues/2882); [60da870](https://github.com/ethers-io/ethers.js/commit/60da870cf2f8b71a4ec0c4bec67e28a11463038d))
+  - Added finalized and safe blockTags. ([#3091](https://github.com/ethers-io/ethers.js/issues/3091); [549168c](https://github.com/ethers-io/ethers.js/commit/549168cc4d0d3d18b12caa70bf5c58f4bcdc0175))
+  - Added arbitrum-goerli to Networks and AlchemyProvider. ([#3246](https://github.com/ethers-io/ethers.js/issues/3246); [e72d13e](https://github.com/ethers-io/ethers.js/commit/e72d13e651c236c0222265931285a466f1441134))
+  - Add EIP-712 type exports. ([#221](https://github.com/ethers-io/ethers.js/issues/221); [7ce41cd](https://github.com/ethers-io/ethers.js/commit/7ce41cdec706def0cd41f7f294c4d31bcb99a4ec))
+  - Added optimism-goerli to AlchemyProvider. ([#3246](https://github.com/ethers-io/ethers.js/issues/3246); [f1cb0d2](https://github.com/ethers-io/ethers.js/commit/f1cb0d2dd654890836810e5c8d221e2664b2ae4a))
+  - Updated EtherscanProvider for new CommunityResource API throttling. ([6bd13c3](https://github.com/ethers-io/ethers.js/commit/6bd13c312fd53eaa78269d2c10e6bc373d67a2a9))
+  - Fix old events from being emitted at the beginning of a filter. ([#3069](https://github.com/ethers-io/ethers.js/issues/3069), [#3094](https://github.com/ethers-io/ethers.js/issues/3094); [ea2d245](https://github.com/ethers-io/ethers.js/commit/ea2d2453a535a319ad55e7ca739ab1bcdb1432b7))
+  - Fixed Interface signautres missing strings as eventFragments. ([#3157](https://github.com/ethers-io/ethers.js/issues/3157); [c004ae5](https://github.com/ethers-io/ethers.js/commit/c004ae50f3df833380ca1540ef5024965ac8ef48))
+  - Fix bug in EIP1193Bridge forwarding to the wrong method. ([#3166](https://github.com/ethers-io/ethers.js/issues/3166); [17676e9](https://github.com/ethers-io/ethers.js/commit/17676e9597ef7610443e3a7d7bb2967e7b509c26))
+  - Use updated Web3 Secret Storage format for JSON wallets. ([#3075](https://github.com/ethers-io/ethers.js/issues/3075); [6f57e8b](https://github.com/ethers-io/ethers.js/commit/6f57e8b1564a0b5c80b742775d02b9fad710c8e6))
+  - Relaxed nameprep length requirement dropping RFC-5891 section 4.2.4. ([#3161](https://github.com/ethers-io/ethers.js/issues/3161); [abdf2e3](https://github.com/ethers-io/ethers.js/commit/abdf2e30a5169d6ddd368f2bc3cdcd5feed25ae5))
+  - Switch to hash.js for ripemd160 on node as it was removed from the default crypto provider in node 17. ([#3082](https://github.com/ethers-io/ethers.js/issues/3082); [450694e](https://github.com/ethers-io/ethers.js/commit/450694e25760d383f3fe3b299d181ebe5fd6ab06))
+  - Add optimism-kovan to EtherscanProvider. ([#3135](https://github.com/ethers-io/ethers.js/issues/3135); [4d3e586](https://github.com/ethers-io/ethers.js/commit/4d3e586701ca9ecd0ab63133d90185809d4f3811))
+  - Forward any blockTag along in the FallbackProvider during call. ([#3168](https://github.com/ethers-io/ethers.js/issues/3168); [ab43e7d](https://github.com/ethers-io/ethers.js/commit/ab43e7d171b6191abc47318e76ddec4ee7156cdd))
+  - Allow browser fetch option overrides. ([#3096](https://github.com/ethers-io/ethers.js/issues/3096); [c309df8](https://github.com/ethers-io/ethers.js/commit/c309df8a3e988b00b4bc636622be78e246379f73))
+
+ethers/v5.6.9 (2022-06-17 14:44)
+--------------------------------
+
+  - Removed Ankr for Ropsten default provider; the merge seems to have broke it. ([3790671](https://github.com/ethers-io/ethers.js/commit/3790671b424bfcfaaf27bab9f964c3ca407e8fea))
+  - Fix NonceManager for increment 0 and provided nonce. ([#3062](https://github.com/ethers-io/ethers.js/issues/3062), [#3085](https://github.com/ethers-io/ethers.js/issues/3085); [0a28679](https://github.com/ethers-io/ethers.js/commit/0a28679994c844cef514f9e800c6cd8e1a21aa30))
+  - Fixed topic filters for numeric types with string values. ([#3013](https://github.com/ethers-io/ethers.js/issues/3013); [0078e02](https://github.com/ethers-io/ethers.js/commit/0078e026f1b438dd0976200ee16c38ec5a7788f6))
+
+ethers/v5.6.8 (2022-05-24 11:50)
+--------------------------------
+
+  - Update BN.js for hexstring bug fix. ([#3017](https://github.com/ethers-io/ethers.js/issues/3017); [30b716b](https://github.com/ethers-io/ethers.js/commit/30b716bf2cfd67ca38f76e344a26c0c2d5b75935), [a27ef82](https://github.com/ethers-io/ethers.js/commit/a27ef825772f72071439c51e51180b6fcc64f03c))
+
+ethers/v5.6.7 (2022-05-20 19:11)
+--------------------------------
+
+  - Add Skynet support. ([#2853](https://github.com/ethers-io/ethers.js/issues/2853), [#2866](https://github.com/ethers-io/ethers.js/issues/2866); [13dd42c](https://github.com/ethers-io/ethers.js/commit/13dd42c6c38d6977645555cdf7ab60354b0e2725))
+  - Fix WebWorker support in rollup files. ([#2976](https://github.com/ethers-io/ethers.js/issues/2976); [d06aa26](https://github.com/ethers-io/ethers.js/commit/d06aa26d74eecd06149f908ce25dbaf867754c0e))
+  - Remove superfluous logging. ([#2995](https://github.com/ethers-io/ethers.js/issues/2995); [ed7e6a5](https://github.com/ethers-io/ethers.js/commit/ed7e6a500e6087efcace8a5ff98997fbce2c6d6d))
+  - Add matic and optimism support to default provider. ([a301297](https://github.com/ethers-io/ethers.js/commit/a3012977b1b10110ea15625754e8fc117e1ea147))
+  - Use case-insensitive schemes for getDefaultProvider. ([#2320](https://github.com/ethers-io/ethers.js/issues/2320); [8b62aef](https://github.com/ethers-io/ethers.js/commit/8b62aeff9cce44cbd16ff41f8fc01ebb101f8265))
+  - Pad position in JSON-RPC getStorageAt calls. ([#2982](https://github.com/ethers-io/ethers.js/issues/2982); [d5815cc](https://github.com/ethers-io/ethers.js/commit/d5815cc4f1c13e5265c748d8afc4c085a97b1945))
+
+ethers/v5.6.6 (2022-05-12 17:29)
+--------------------------------
+
+  - Ensure gas estimate errors are not call exceptions in disguise. ([#2954](https://github.com/ethers-io/ethers.js/issues/2954); [2c3dae0](https://github.com/ethers-io/ethers.js/commit/2c3dae08745530b8c3ea3ab6c8f03e8fa8ac1e5c))
+  - Added optimism to EtherscanProvider. ([#2968](https://github.com/ethers-io/ethers.js/issues/2968); [c6eebf9](https://github.com/ethers-io/ethers.js/commit/c6eebf9928597cab305b663fa409d30e3122e7d0))
+  - Remove pedantic check for new keyword which broke some platforms for inheritance. ([#2860](https://github.com/ethers-io/ethers.js/issues/2860), [#2861](https://github.com/ethers-io/ethers.js/issues/2861); [32b7373](https://github.com/ethers-io/ethers.js/commit/32b7373456972e0fbd47e7edaf056ed130adf1da))
+
+ethers/v5.6.5 (2022-05-01 02:10)
+--------------------------------
+
+  - Added testnets for AnkrProvider. ([#2949](https://github.com/ethers-io/ethers.js/issues/2949), [#2950](https://github.com/ethers-io/ethers.js/issues/2950); [d9f45b3](https://github.com/ethers-io/ethers.js/commit/d9f45b3b9db92c72f9c606bab8315d0eb02fec70))
+  - Better error coalescing for OpenEthereum nodes. ([#2846](https://github.com/ethers-io/ethers.js/issues/2846); [bebd669](https://github.com/ethers-io/ethers.js/commit/bebd6698c6c3193f0bdb96b54c5daa5ee5d0692c))
+  - Enforce 32-byte private key length (2926). ([7b299dd](https://github.com/ethers-io/ethers.js/commit/7b299dd9c97571b12916e3ae529540f3f2e5a367))
+  - Fixed decimal strings as value-type properties for JsonRpcSigner. ([#2948](https://github.com/ethers-io/ethers.js/issues/2948); [9bf17fa](https://github.com/ethers-io/ethers.js/commit/9bf17fa07c6149a02ef217f2b89f1bfd990b1a6c))
+
 ethers/v5.6.4 (2022-04-13 16:56)
 --------------------------------
 
@@ -94,7 +171,7 @@ ethers/v5.5.0 (2021-10-19 00:01)
   - Adding customData support to transactions to assist L2 chains. ([#1761](https://github.com/ethers-io/ethers.js/issues/1761); [68095a4](https://github.com/ethers-io/ethers.js/commit/68095a48ae19ed06cbcf2f415f1fcbda90d4b2ae))
   - Added some explicit null results to previously implicit null results for ENS. ([#1850](https://github.com/ethers-io/ethers.js/issues/1850); [0e5419e](https://github.com/ethers-io/ethers.js/commit/0e5419ec79cb18d82bab8c47bfa3ab4a21cfd293))
   - Added BigNumber _difficulty to Block results. ([#2001](https://github.com/ethers-io/ethers.js/issues/2001), [#2036](https://github.com/ethers-io/ethers.js/issues/2036); [a48552a](https://github.com/ethers-io/ethers.js/commit/a48552a4fb85a08178d07437a3934db98b7d0736))
-  - Removed redundant call to normalizing blockTag (1838). ([d5b41ce](https://github.com/ethers-io/ethers.js/commit/d5b41ce210c0f22dd795749810f6ce798f71a00f))
+  - Removed redundant call to normalizing blockTag (#1838). ([d5b41ce](https://github.com/ethers-io/ethers.js/commit/d5b41ce210c0f22dd795749810f6ce798f71a00f))
   - Fixed isBytes check for invalid length or elements. ([#1964](https://github.com/ethers-io/ethers.js/issues/1964); [7a404fb](https://github.com/ethers-io/ethers.js/commit/7a404fb8ed95a99baab8f3b384f438b697fa5d76))
   - Fixed randomBytes not rejecting NaN as a length. ([#1977](https://github.com/ethers-io/ethers.js/issues/1977); [f8adf82](https://github.com/ethers-io/ethers.js/commit/f8adf82e16aaad1a7c1750e7f2e3a9f8073b73e1))
   - Allow any Networkish for getDefaultProvider. ([#2031](https://github.com/ethers-io/ethers.js/issues/2031); [cc250b2](https://github.com/ethers-io/ethers.js/commit/cc250b2060451e0ee6b1cf3edb6b005f9eee9c61))
